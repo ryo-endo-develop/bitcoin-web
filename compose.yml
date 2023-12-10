@@ -14,7 +14,7 @@ services:
       context: ./frontend/
       dockerfile: Dockerfile
     volumes:
-      - ./frontend:/app
+      - ./frontend:/app # バインドマウントの設定
     ports:
       - 3005:3000
     environment:
