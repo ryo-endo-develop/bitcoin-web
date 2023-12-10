@@ -16,7 +16,9 @@ services:
     volumes:
       - ./frontend:/app
     ports:
-      - 3005:3000 
+      - 3005:3000
+    environment:
+      - WATCHPACK_POLLING=true
   db:
     image: "postgres:15-alpine"
     ports:
